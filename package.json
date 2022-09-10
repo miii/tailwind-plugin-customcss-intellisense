@@ -1,0 +1,35 @@
+{
+  "name": "tailwind-plugin-customcss-intellisense",
+  "version": "1.0.0-rc.0",
+  "description": "Enable autocompletion of custom CSS classes inside Tailwind CSS IntelliSense",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miii/tailwind-plugin-customcss-intellisense.git"
+  },
+  "author": "Jacob Andersson",
+  "homepage": "https://github.com/miii/tailwind-plugin-customcss-intellisense",
+  "bugs": "https://github.com/miii/tailwind-plugin-customcss-intellisense/issues",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.0",
+    "fast-glob": "^3.2.12"
+  },
+  "devDependencies": {
+    "unbuild": "^0.8.10"
+  }
+}
